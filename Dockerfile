@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install -g markdownlint-cli
+RUN npm install -g markdownlint-cli@0.20.0
 
 USER cardboardci
 
